@@ -4,12 +4,7 @@ import Image from "next/image";
 import UgoOnoh from "./images/Ugo_Onoh_Poster.jpeg";
 import { useRef, useState } from "react";
 import { getTimeRemaining } from "@/utils/utils";
-import {
-  AiOutlineHome,
-  AiOutlineCloudDownload,
-  AiOutlineDownload,
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 
 export default function Home() {
   const downloadLink =
@@ -77,7 +72,7 @@ export default function Home() {
                     href={`//${downloadLink}`}
                     download
                   >
-                    Get E-copy
+                    Get E-copy (35MB)
                   </a>
                 ) : (
                   <a href="#">E-copy coming soon...</a>
@@ -85,7 +80,7 @@ export default function Home() {
               </button>
             </p>
             <span>
-              <AiOutlineDownload />
+              <AiOutlineCloudDownload />
             </span>
           </div>
         </div>
