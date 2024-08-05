@@ -79,7 +79,7 @@ export default function Home() {
                 )}
               </button>
             </p>
-            <span>
+            <span className="text-2xl">
               <AiOutlineCloudDownload />
             </span>
           </div>
