@@ -17,17 +17,56 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #0e1112 23.5%,
+        #0000 0
+      )
+      33.6px 48px,
+    radial-gradient(circle farthest-side at 0% 50%, #2e240f 24%, #0000 0) 30.4px
+      48px,
+    linear-gradient(#0e1112 14%, #0000 0, #0000 85%, #0e1112 0) 0 0,
+    linear-gradient(
+        150deg,
+        #0e1112 24%,
+        #2e240f 0,
+        #2e240f 26%,
+        #0000 0,
+        #0000 74%,
+        #2e240f 0,
+        #2e240f 76%,
+        #0e1112 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #0e1112 24%,
+        #2e240f 0,
+        #2e240f 26%,
+        #0000 0,
+        #0000 74%,
+        #2e240f 0,
+        #2e240f 76%,
+        #0e1112 0
+      )
+      0 0,
+    linear-gradient(90deg, #2e240f 2%, #0e1112 0, #0e1112 98%, #2e240f 0%) 0 0
+      #0e1112;
+  background-size: 64px 96px;
+  background-color: #0e1112;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.anim-sec {
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease infinite;
+}
+
+.image-effects {
+  filter: contrast(110%);
 }
