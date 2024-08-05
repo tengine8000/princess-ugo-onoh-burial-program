@@ -63,25 +63,31 @@ export default function Home() {
           />
           <div className="flex flex-row justify-center items-center px-6 my-6 text-2xl gap-1 bg-gray-800 border border-[#d8b965] text-[#d8b965] rounded-lg hover:text-gray-100 hover:bg-[#d8b965]">
             <p>
-              <button className="p-4" title="Download e-copy">
-                {/* daysToGo <= 0 && hoursToGo <= 2 */}
-                {daysToGo >= 0 ? (
-                  <a
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href={`//${downloadLink}`}
-                    download
-                  >
-                    Get E-copy (35MB)
-                  </a>
+              <button
+                className="flex flex-row p-4 gap-2"
+                title="Download e-copy"
+              >
+                {daysToGo > 0 && hoursToGo <= 2 ? (
+                  <>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href={`//${downloadLink}`}
+                      download
+                    >
+                      Get E-copy (35MB)
+                    </a>
+                    <span className="text-4xl">
+                      <AiOutlineCloudDownload />
+                    </span>
+                  </>
                 ) : (
-                  <a href="#">E-copy coming soon...</a>
+                  <>
+                    <a href="#">E-copy coming soon...</a>
+                  </>
                 )}
               </button>
             </p>
-            <span className="text-2xl">
-              <AiOutlineCloudDownload />
-            </span>
           </div>
         </div>
       </div>
