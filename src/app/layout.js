@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Late Princess Madam Ugo Onoh Burial Program",
   description:
-    "The burial program of Late Late Princess Madam Ugo Onoh and access to download e-copy.",
+    "The burial program of Late Princess Madam Ugo Onoh and access to download e-copy.",
 };
 
 export default function RootLayout({ children }) {
