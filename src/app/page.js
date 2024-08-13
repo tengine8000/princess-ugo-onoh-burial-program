@@ -16,9 +16,11 @@ export default function Home() {
   futureDate.setUTCFullYear(2024);
   futureDate.setUTCMonth(7);
   futureDate.setUTCDate(17);
-  futureDate.setUTCHours(13);
-  futureDate.setUTCMinutes(45);
-  futureDate.setUTCSeconds(26);
+  futureDate.setUTCHours(9);
+  futureDate.setUTCMinutes(0);
+  futureDate.setUTCSeconds(0);
+
+  console.log(futureDate.toDateString(), futureDate.toTimeString());
 
   const timer = setInterval(
     () => setTimeRemaining(getTimeRemaining(futureDate)),
