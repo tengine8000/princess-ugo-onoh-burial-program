@@ -67,7 +67,7 @@ export default function Home() {
                 className="flex flex-row p-4 gap-2"
                 title="Download e-copy"
               >
-                {daysToGo > 0 && hoursToGo <= 2 ? (
+                {daysToGo <= 0 && hoursToGo <= 2 ? (
                   <>
                     <a
                       rel="noopener noreferrer"
