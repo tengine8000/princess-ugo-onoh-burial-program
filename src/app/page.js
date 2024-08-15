@@ -39,21 +39,29 @@ export default function Home() {
         >
           <div className="days flex flex-col basis-1/4 shrink-0 items-center justify-center bg-gray-800 border border-[#d8b965] text-[#d8b965] rounded-t-full p-4">
             <span className="">{daysToGo > 0 ? daysToGo : 0}</span>
-            <span className="uppercase text-xs">Days</span>
+            <span className="uppercase text-xs">
+              {daysToGo > 1 ? "Days" : "Day"}
+            </span>
           </div>
           <div className="hours flex flex-col basis-1/4 shrink-0 items-center justify-center bg-gray-800 border border-[#d8b965] text-[#d8b965] rounded-t-full p-4">
             <span>{hoursToGo > 0 ? hoursToGo : 0}</span>
-            <span className="uppercase text-xs">Hours</span>
+            <span className="uppercase text-xs">
+              {hoursToGo > 1 ? "Hours" : "Hour"}
+            </span>
           </div>
           <div className="minutes flex flex-col basis-1/4 shrink-0 items-center justify-center bg-gray-800 border border-[#d8b965] text-[#d8b965] rounded-t-full p-4">
             <span>{minsToGo > 0 ? minsToGo : 0}</span>
-            <span className="uppercase text-xs">Mins</span>
+            <span className="uppercase text-xs">
+              {minsToGo > 1 ? "Mins" : "Min"}
+            </span>
           </div>
           <div className="seconds flex flex-col basis-1/4 shrink-0 items-center justify-center bg-gray-800 border border-[#d8b965] text-[#d8b965] rounded-t-full p-4">
             <span className="anim-sec animate-ping text-white">
               {secsToGo > 0 ? secsToGo : 0}
             </span>
-            <span className="uppercase text-xs">Secs</span>
+            <span className="uppercase text-xs">
+              {secsToGo > 1 ? "Secs" : "Sec"}
+            </span>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
